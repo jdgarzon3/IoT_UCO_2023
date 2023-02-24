@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "../../../../Desktop/IOT/IoT_UCO_2021/ejemplos/Basic_WebServer"
+		},
+		{
+			"name": "Basic_GPIO",
+			"path": "../../../../Desktop/IOT/IoT_UCO_2021/ejemplos/Basic_GPIO"
+		},
+		{
+			"name": "practica1",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "practica1"
+	}
+}
