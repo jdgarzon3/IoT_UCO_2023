@@ -3,9 +3,9 @@
 #include <PubSubClient.h>
 #include <ArduinoJson.h>
 //WIfi SSID & PASS
-const char *ssid = "xxxxxxxxxxxx"; 
-const char *password = "xxxxxxxxxxx";
-const char *mqttserver = "xxxxxxxxxxx"; // Dirección IP MQTT broker
+const char *ssid = "xxxxxxxxxxxxxxx"; 
+const char *password = "xxxxxxxxxxxxx";
+const char *mqttserver = "xxxxxxxxxxxxxx"; // Dirección IP MQTT broker
 const int mqttport = 1883;               // Puerto de MQTT broker
 const char *input = "/Timezone";         // variable del topico de entrada 
 const char *output = "/output";          // variable del topico de salida 
@@ -141,7 +141,7 @@ void API_world_time(byte *payload, unsigned int length)
         month_obtained = "Abril";
       }
       String fecha_hora = day_obtained + ", " + num_month + " de " + month_obtained + " de " + year + " -- " + timeS;
-      //Topico de salida con la fecha y hora solicitada
+      //Topico de salida con la fecha y hora solicitada por el usuario
       client.publish(output, fecha_hora.c_str());
       return; 
     }
